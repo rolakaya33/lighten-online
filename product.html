@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{ 
+margin: 0;
+padding: 0;
+}
+:root{
+    --primarycolor:#ffc107;
+    --mainDark:#343a40;
+    --mainGray:#6c757d;
+   
+}
+body{
+    font-family: poppins, sans-serif;
+    font-size:  17px;
+    color:black;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 150px 200px 150px 864px 400px 70px;
+
+}
+
+              /*header*/
+
+#header{
+    background:var(--primarycolor) ;
+    
+  
+}
+.header-text{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.header-ul{
+    display: flex;
+    list-style: none;
+}
+.fa-brands{
+    color: black;
+    padding: 15px;
+}
+
+              /*end header*/
+
+              /*nav*/
+
+#nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav-all{
+    display: flex;
+    align-items: center;
+}
+.nav-ul{
+    list-style: none;
+    display: flex;
+}
+.nav-list ul a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.nav-list ul a:hover{
+    color: var(--primarycolor);
+    transition: ease 0.3s;
+}
+.nav-ul li .nav-home{
+    color: var(--primarycolor);
+}
+.nav-ul li{
+  padding-left: 50px;
+}
+.nav-li a{
+    background: var(--primarycolor);
+    padding:7px 30px 7px 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.nav-ul .nav-li a:hover{
+    color: white;
+}
+/*product bg*/
+
+.product-bg{
+    background: var(--primarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*text*/
+
+.product-text0 p{
+text-align: center;
+margin-top: 50px;
+font-size: 25px;
+}
+
+.products{
+    background-image: url(./imge/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: #ddd 0px 0px 12px 5px;
+    
+}
+
+.products-all{
+    background: #ffffffbd;
+    box-shadow: #00000040 0px 0px 25px 0px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.products-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.products-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.p-box{
+    line-height: 35px;
+    width: 280px;
+    text-align: center;
+    background: #ddd;
+    padding: 20px 5px;
+}
+.p-box:hover{
+    background: var(--primarycolor);
+    transition: ease 0.5s;
+}
+.Norton{
+    margin-right: 30px;
+}
+.Norton-1{
+    margin-right: 30px;
+}
+.Norton-2{
+    margin-right: 30px;
+}
+
+.Norton-4{
+    margin-right: 30px;
+}
+.Norton-5{
+    margin-right: 30px;
+}
+.Norton-6{
+    margin-right: 30px;
+}
+.p-box h4{
+   font-size: 17px;
+   font-weight: 500;
+}
+.p-box span{
+font-size: 22px;
+font-weight: 500;
+}
+
+/*contact*/
+
+.contact{
+    background: black;
+}
+.contact-all{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+.icon a i{
+    color: white;
+    text-align: center;
+
+}
+.icon a i:hover{
+    background: var(--primarycolor);
+    border-radius: 50%;
+    transition: ease 0.3s;
+}
+.contact-text{
+    display: flex;
+    justify-content: center;
+
+}
+.conact{
+    width: 200px;
+    text-align: left;
+    margin-right: 60px;
+}
+.conact h3{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 90px;
+}
+.conact p{
+    line-height: 30px;
+}
+.links{
+    width: 300px;
+    text-align: left;
+    margin-right: 40px;
+}
+.links h3{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 90px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+   
+}
+.links ul li {
+list-style: none;
+}
+.conact-service{
+    width: 300px;
+    text-align: left;
+}
+.conact-service h3{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 90px;
+}
+.conact-service a{
+    text-decoration: none;
+    color: white;
+}
+.conact-service ul li{
+    list-style: none;
+}
+.about{
+    width: 250px;
+    text-align: left;
+    margin-left: -80px;
+}
+.about h3{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 90px;
+}
+.contact-all ul li a:hover{
+    color: var(--primarycolor);
+}
+
+
+
+/*footer*/
+
+.Copyright{
+    background: var(--primarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Copyright p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.Copyright p a{
+text-decoration: none;
+color: black;
+}
+.Copyright p a:hover{
+    color: white;
+    transition: ease 0.3s;
+   
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- header -->
+        
+                <header id="header">
+                   
+                    <div class="header-text">
+                        <div class="header-list">
+                            <ul class="header-ul">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-invision"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="h-text">
+                            <p class="header-p">long established fact that a reader will be</p>
+                        </div>
+                  
+                </header>
+
+
+                <!-- nav -->
+
+        <nav id="nav">
+            
+            <div class="nav-all">
+                <div class="nav-logo">
+                    <a href="./index.html">
+                        <img src="./imge/logo.jpg" alt="logo">
+                    </a> 
+                </div>
+                <div class="nav-list">
+                    <ul class="nav-ul">
+                        <li  class="nav-home" ><a class="nav-home" href="./index.html">home</a></li>
+                        <li><a href="./about.html">about</a></li>
+                        <li><a href="./product.html">product</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="#">signup</a></li>
+                            <li class="nav-li"><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+        </nav>
+
+
+        <!-- product bg-->
+
+    <div class="product-bg">
+        <h1>our product</h1>
+    </div>  
+    
+ <!--text-->
+ <div class="product-text0"> 
+    <p>We package the products with best services to make you a happy customer.</p>
+ </div>
+
+ <!--product -->
+<div class="products">
+    <div class="products-all">
+        <div class="products-1">
+
+            <div class="Norton">
+                <div class="p-box">
+                <i><img src="./imge/p1.png" alt="1"></i>
+                <h4>Norton Internet Security</h4>
+                <span>$25.00</span>
+                </div>
+                </div>
+
+            
+            <div class="Norton-1">
+                <div class="p-box">
+                <i><img src="./imge/p2.png" alt="2"></i>
+                <h4>Norton Internet Security</h4>
+                <span>$25.00</span>
+            </div>
+            </div>
+            
+            <div class="Norton-2">
+                <div class="p-box">
+                <i><img src="./imge/p3.png" alt="3"></i>
+                <h4>Norton Internet Security</h4>
+                <span>$25.00</span>
+            </div>
+            </div>
+            
+            <div class="Norton-3">
+                <div class="p-box">
+                <i><img src="./imge/p4.png" alt="4"></i>
+                <h4>Norton Internet Security</h4>
+                <span>$25.00</span>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="products-2">
+
+            <div class="Norton-4">
+                <div class="p-box">
+                <i><img src="./imge/p5.png" alt="5"></i>
+                <h4>Norton Internet Security</h4>
+                <span>$25.00</span>
+            </div>
+            </div>
+
+            <div class="Norton-5">
+                <div class="p-box">
+                <i><img src="./imge/p2 (1).png" alt="6"></i>
+                <h4>Norton Internet Security</h4>
+                <span>$25.00</span>
+            </div>
+            </div>
+
+            <div class="Norton-6">
+                <div class="p-box">
+                <i><img src="./imge/p6.png" alt="7"></i>
+                <h4>Norton Internet Security</h4>
+                <span>$25.00</span>
+            </div>
+            </div>
+
+            <div class="Norton-7">
+                <div class="p-box">
+                <i><img src="./imge/p7.png" alt="8"></i>
+                <h4>Norton Internet Security</h4>
+                <span>$25.00</span>
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--contact-->
+
+<div class="contact">
+    <div class="contact-all">
+        <div class="icon">
+            <a href="./index.html"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="./index.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="./index.html"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="./index.html"><i class="fa-brands fa-internet-explorer"></i></a>
+        </div>
+        <div class="contact-text">
+            <div class="conact">
+                <h3>conact us</h3>
+                <p>123 Second Street Fifth Avenue,
+                    <br>
+                    Manhattan, New York
+                    <br>
+                    +987 654 3210</p>
+            </div>
+
+            <div class="links">
+                <h3>ADDITIONAL LINKS</h3>
+                <ul>
+                    <li><a href="./index.html">About us</a></li>
+                    <li><a href="./index.html">Terms and conditions</a></li>
+                    <li><a href="./index.html">Privacy policy</a></li>
+                    <li><a href="./index.html">News</a></li>
+                    <li><a href="./index.html">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="conact-service">
+                <h3>service</h3>
+                <ul>
+                    <li><a href="./index.html"> Data recovery</a></li>
+                    <li><a href="./index.html">Computer repair</a></li>
+                    <li><a href="./index.html">Mobile service</a></li>
+                    <li><a href="./index.html">Network solutions</a></li>
+                    <li><a href="./index.html">Technical support</a></li>
+                </ul>
+            </div>
+
+            <div class="about">
+                <h3>About lighten</h3>
+                <p>Tincidunt elit magnis nulla facilisis. Dolor Sapien nunc amet ultrices,</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="Copyright">
+    <p>Copyright 2019 All Right Reserved By 
+        <a href="">Free html Templates</a>
+        Distributed By 
+        <a href="">ThemeWagon </a>
+    </p>
+</div>
+     
+
+
+
+</div>
+</body>
+</html>
