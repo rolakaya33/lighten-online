@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{ 
+margin: 0;
+padding: 0;
+}
+:root{
+    --primarycolor:#ffc107;
+    --mainDark:#343a40;
+    --mainGray:#6c757d;
+   
+}
+body{
+    font-family: poppins, sans-serif;
+    font-size:  17px;
+    color:black;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 150px 200px 500px 200px 700px 150px 700px 400px 70px;
+
+}
+
+              /*header*/
+
+#header{
+    background:var(--primarycolor) ;
+    
+  
+}
+.header-text{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.header-ul{
+    display: flex;
+    list-style: none;
+}
+.fa-brands{
+    color: black;
+    padding: 15px;
+}
+
+              /*end header*/
+
+              /*nav*/
+
+#nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav-all{
+    display: flex;
+    align-items: center;
+}
+.nav-ul{
+    list-style: none;
+    display: flex;
+}
+.nav-list ul a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.nav-list ul a:hover{
+    color: var(--primarycolor);
+    transition: ease 0.3s;
+}
+.nav-ul li .nav-home{
+    color: var(--primarycolor);
+}
+.nav-ul li{
+  padding-left: 50px;
+}
+.nav-li a{
+    background: var(--primarycolor);
+    padding:7px 30px 7px 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.nav-ul .nav-li a:hover{
+    color: white;
+}
+/*about bg*/
+
+.about-bg{
+    background: var(--primarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*who*/
+
+.who-img img{
+    max-width: 100%;
+    height: 370px;
+}
+.who-text h3{
+   font-size: 30px;
+}
+.who-text{
+    width: 550px;
+    margin-left: 30px;
+}
+.who-all{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+
+}
+.who-text p{
+    font-weight: 300;
+}
+
+    /*choose*/
+
+    .choose-text{
+   text-align: center;
+   line-height: 90px;
+}     
+.choose-h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 470;
+    color: var(--primarycolor);
+}    
+.choose-span{
+    color: black;
+}     
+.choose-line{
+    background: black;
+    width: 114px;
+    height: 10px;
+    margin-left: 900px;
+    position: absolute;
+    top: 970px;
+}
+.choose-span-2{
+    font-size:28px ;
+}
+
+
+#choose-page{
+    background: var(--primarycolor);
+    height: 550px;
+}
+.white-page{
+    width: 1300px;
+    background: white;
+    margin-left: 300px;
+    box-shadow: #ddd 0px 0px 10px 3px;
+    padding: 40px 20px;
+    margin-bottom: 5px;
+    height: 470px; 
+}
+.w-p-text{
+   display: flex;
+    justify-content: space-around;
+   
+}
+.data{
+    width: 300px;
+    text-align: center;
+
+}
+.computer{
+    width: 300px;
+    text-align: center;
+}
+.mobile{
+    width: 300px;
+    text-align: center;
+}
+.network{
+    width: 300px;
+    text-align: center;
+}
+.choose-btn{
+    text-align: center;
+    margin-top: 100px;
+}
+.choose-a{
+    border: var(--primarycolor) 2px solid;
+    text-decoration: none;
+    color: black;
+    padding: 17px 50px;
+    font-size: 20px;
+}
+.choose-a:hover{
+    background: var(--primarycolor);
+    transition: ease 0.5s;
+
+}
+.box{
+    line-height: 40px;
+    width: 250px;
+}
+.box h3{
+    font-size: 26px;
+    font-weight: 400;
+}
+
+
+
+    /*service*/
+
+    .service-text{
+    text-align: center;
+}
+.service-text h2{
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--primarycolor);
+    line-height: 130px;
+    text-transform: uppercase;
+}
+.service-span{
+    color: black;
+}
+.service-line{
+    background: black;
+    width: 114px;
+    height: 10px;
+    margin-left: 270px;
+    position: absolute;
+    top: 1890px;
+}
+.service-span-1{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.product-1{
+display: flex;
+justify-content: center;
+align-content: center;
+margin-top: 80px ;
+
+}
+.s-box{
+    line-height: 35px;
+    width: 280px;
+    text-align: center;
+    
+
+}
+.fast{
+    box-shadow: #ddd 0px 0px 12px 5px;
+    padding: 20px 50px;
+    margin-right: 30px;
+}
+.Secure{
+    box-shadow: #ddd 0px 0px 12px 5px;
+    padding: 20px 50px;
+    margin-right: 30px;
+}
+.Expert{
+    box-shadow: #ddd 0px 0px 12px 5px;
+    padding: 20px 50px;
+}
+.product-2{
+    display: flex;
+justify-content: center;
+margin-top: 30px;
+
+}
+.Affordable{
+    box-shadow: #ddd 0px 0px 12px 5px;
+    padding: 20px 50px;
+    margin-right: 30px;
+}
+.warranty{
+    box-shadow: #ddd 0px 0px 12px 5px;
+    padding: 20px 50px;
+    margin-right: 30px;
+}
+.Award{
+    box-shadow: #ddd 0px 0px 12px 5px;
+    padding: 20px 50px;
+}
+.s-box h3{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 50px;
+
+}
+.s-box p{
+    font-weight: 300;
+    line-height: 30px;
+}
+
+/*contact*/
+
+.contact{
+    background: black;
+}
+.contact-all{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+.icon a i{
+    color: white;
+    text-align: center;
+
+}
+.icon a i:hover{
+    background: var(--primarycolor);
+    border-radius: 50%;
+    transition: ease 0.3s;
+}
+.contact-text{
+    display: flex;
+    justify-content: center;
+
+}
+.conact{
+    width: 200px;
+    text-align: left;
+    margin-right: 60px;
+}
+.conact h3{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 90px;
+}
+.conact p{
+    line-height: 30px;
+}
+.links{
+    width: 300px;
+    text-align: left;
+    margin-right: 40px;
+}
+.links h3{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 90px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+   
+}
+.links ul li {
+list-style: none;
+}
+.conact-service{
+    width: 300px;
+    text-align: left;
+}
+.conact-service h3{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 90px;
+}
+.conact-service a{
+    text-decoration: none;
+    color: white;
+}
+.conact-service ul li{
+    list-style: none;
+}
+.about{
+    width: 250px;
+    text-align: left;
+    margin-left: -80px;
+}
+.about h3{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 90px;
+}
+.contact-all ul li a:hover{
+    color: var(--primarycolor);
+}
+
+
+/*contact*/
+
+/*footer*/
+
+.Copyright{
+    background: var(--primarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Copyright p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.Copyright p a{
+text-decoration: none;
+color: black;
+}
+.Copyright p a:hover{
+    color: white;
+    transition: ease 0.3s;
+   
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- header -->
+        
+                <header id="header">
+                   
+                    <div class="header-text">
+                        <div class="header-list">
+                            <ul class="header-ul">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-invision"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="h-text">
+                            <p class="header-p">long established fact that a reader will be</p>
+                        </div>
+                  
+                </header>
+
+
+                <!-- nav -->
+
+        <nav id="nav">
+            
+            <div class="nav-all">
+                <div class="nav-logo">
+                    <a href="./index.html">
+                        <img src="./imge/logo.jpg" alt="logo">
+                    </a> 
+                </div>
+                <div class="nav-list">
+                    <ul class="nav-ul">
+                        <li  class="nav-home" ><a class="nav-home" href="./index.html">home</a></li>
+                        <li><a href="./about.html">about</a></li>
+                        <li><a href="./product.html">product</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="#">signup</a></li>
+                            <li class="nav-li"><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+        </nav>
+
+
+        <!-- about bg-->
+
+    <div class="about-bg">
+        <h1>about</h1>
+    </div>  
+    
+    <!-- who-->
+    
+    <div class="who">
+        <div class="who-all">
+            <div class="who-img">
+                <i><img src="./imge/pc_layout.png" alt="pc"></i>
+            </div>
+            <div class="who-text">
+                <h3>Who is Lighten</h3>
+                <br>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum.
+
+                </p>
+                <br>
+                <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- choose -->
+        
+    <div id="choose">
+        
+        <div class="choose-text">
+                <h2 class="choose-h2">why
+                    <span class="choose-span">choose us </span>
+                </h2>
+                <div class="choose-line"><span class="chosse-span-1"></span></div>
+                <span class="choose-span-2">Fastest repair service with best price!</span>
+        </div>
+    
+    </div>
+
+    <div id="choose-page">
+       
+        <div class="ch-page-all">
+            <div class="white-page">
+                <div class="w-p-text">
+                    <div class="data">
+                        <div class="box">
+                            <i> <img src="./imge/1.png" alt="1"></i>
+                            <h3>Data recovery</h3>
+                            <p>Perspiciatis eos quos totam cum minima autPerspiciatis eos quos</p>
+                        </div>
+                    </div>
+                    <div class="computer">
+                        <div class="box">
+                            <i><img src="./imge/2.png" alt="2"></i>
+                            <h3>Computer repair</h3>
+                            <p>Perspiciatis eos quos totam cum minima autPerspiciatis eos quos</p>
+                        </div>
+                    </div>
+                    <div class="mobile">
+                        <div class="box">
+                            <i><img src="./imge/3.png" alt="3"></i>
+                            <h3>Mobile service</h3>
+                            <p>Perspiciatis eos quos totam cum minima autPerspiciatis eos quos</p>
+                        </div>
+                    </div>
+                    <div class="network">
+                        <div class="box">
+                            <i><img src="./imge/4.png" alt="4"></i>
+                            <h3>Network solutions</h3>
+                            <p>Perspiciatis eos quos totam cum minima autPerspiciatis eos quos</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="choose-btn">
+                        <a href="#" class="choose-a">Read More</a>
+                    </div>
+                
+
+            </div>
+         
+        </div>
+    
+    </div>
+
+
+    <!-- service -->
+
+<div class="service">
+    <div class="service-all">
+        <div class="service-text">
+            <h2>Service 
+                <span class="service-span">Process</span>
+            </h2>
+            <span class="service-line"></span>
+            <span class="service-span-1">Easy and effective way to get your device repair</span>
+        </div>
+    </div>
+    
+</div>
+<div class="s-product">
+    <div class="s-product-all">
+        <div class="product-1">
+        <div class="fast">
+            <div class="s-box">
+                <i><img src="./imge/service1.png" alt="1"></i>
+                <h3>Fast service</h3>
+                <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+            </div>
+        </div>
+
+        <div class="Secure">
+            <div class="s-box">
+                <i><img src="./imge/service2.png" alt="2"></i>
+                <h3>Secure payments</h3>
+                <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+            </div>
+        </div>
+
+        <div class="Expert">
+            <div class="s-box">
+                <i><img src="./imge/service3.png" alt="3"></i>
+                <h3>Expert team</h3>
+                <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+            </div>
+        </div>
+    </div>
+    <div class="product-2">
+
+        <div class="Affordable ">
+            <div class="s-box">
+                <i><img src="./imge/5.png" alt="1"></i>
+                <h3>Affordable services</h3>
+                <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+            </div>
+        </div>
+
+        <div class="warranty">
+            <div class="s-box">
+                <i><img src="./imge/service5.png" alt="1"></i>
+                <h3>90 Days warranty</h3>
+                <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+            </div>
+        </div>
+
+        <div class="Award ">
+            <div class="s-box">
+                <i><img src="./imge/service6.png" alt="1"></i>
+                <h3>Award winning</h3>
+                <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+</div>
+
+<!--contact-->
+
+<div class="contact">
+    <div class="contact-all">
+        <div class="icon">
+            <a href="./index.html"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="./index.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="./index.html"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="./index.html"><i class="fa-brands fa-internet-explorer"></i></a>
+        </div>
+        <div class="contact-text">
+            <div class="conact">
+                <h3>conact us</h3>
+                <p>123 Second Street Fifth Avenue,
+                    <br>
+                    Manhattan, New York
+                    <br>
+                    +987 654 3210</p>
+            </div>
+
+            <div class="links">
+                <h3>ADDITIONAL LINKS</h3>
+                <ul>
+                    <li><a href="./index.html">About us</a></li>
+                    <li><a href="./index.html">Terms and conditions</a></li>
+                    <li><a href="./index.html">Privacy policy</a></li>
+                    <li><a href="./index.html">News</a></li>
+                    <li><a href="./index.html">Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="conact-service">
+                <h3>service</h3>
+                <ul>
+                    <li><a href="./index.html"> Data recovery</a></li>
+                    <li><a href="./index.html">Computer repair</a></li>
+                    <li><a href="./index.html">Mobile service</a></li>
+                    <li><a href="./index.html">Network solutions</a></li>
+                    <li><a href="./index.html">Technical support</a></li>
+                </ul>
+            </div>
+
+            <div class="about">
+                <h3>About lighten</h3>
+                <p>Tincidunt elit magnis nulla facilisis. Dolor Sapien nunc amet ultrices,</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="Copyright">
+    <p>Copyright 2019 All Right Reserved By 
+        <a href="">Free html Templates</a>
+        Distributed By 
+        <a href="">ThemeWagon </a>
+    </p>
+</div>
+     
+
+
+</div>
+    
+</body>
+</html>
